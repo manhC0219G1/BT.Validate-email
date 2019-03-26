@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Check(str) {
+        regexp =/^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)$/;
+        if (regexp.test(str)) {
+            return true;
+        }
+        return false;
+    }
+    let a = Check("a@gmail.com")
+    document.write(a+"<br/>");
+    let b = Check("asdsadas@#asa")
+    document.write(b)
+</script>
+</body>
+</html>
